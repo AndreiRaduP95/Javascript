@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css">
+    <script src="storeBtn.js"></script>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div id="head_container" class="head_container">
+      <div class="container">
+        <img class="star" src="images/icon-star.svg" width="20px" />
+        <div><h1>How did we do?</h1></div>
+
+        <div>
+          <p class="text1">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="ratingButtons">
+          <button class="btn" value="1" onclick="storeBtn(this)">1</button>
+          <button class="btn" value="2" onclick="storeBtn(this)">2</button>
+          <button class="btn" value="3" onclick="storeBtn(this)">3</button>
+          <button class="btn" value="4" onclick="storeBtn(this)">4</button>
+          <button class="btn" value="5" onclick="storeBtn(this)">5</button>
+        </div>
+        <div class="btn_submit">
+          <button  type="submit" id="submit_btn" onclick="submitValue()">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+<div id="typ_container" class="typ_container">
+  <div class="container">
+    <div class="phone"><img src="images/illustration-thank-you.svg" width="140px"></div>
+ 
+<div class="rating_stars">
+  <div class="rating_function" id="rating_function" >
+    
+    </div></div>
+ <div class="typ_message">
+  <h2 class="thanks">Thank you!</h2> 
+</div>
+    <div class="typ_message_2">
+      <p class="thanks2">We appreciate you taking the time to give a rating. <br>If
+    you ever need more support, don’t hesitate to <br>get in touch!</p></div>
+  </div>
+  </div>
+    <!-- Thank you state end -->
+    </div>
+  </body>
+</html>

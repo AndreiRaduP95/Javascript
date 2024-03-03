@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Overpass";
+  src: url(Overpass-Light.ttf);
+}
+body {
+  background-color: #141414;
+}
+.head_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+  font-family: Overpass;
+}
+.text1 {
+  color: rgba(207, 205, 205, 0.61);
+  font-family: Overpass;
+}
+.container {
+  width: 350px;
+  height: 300px;
+  border: 1px solid transparent;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 15px;
+  background: linear-gradient(
+    to bottom,
+    rgba(64, 77, 89, 0.395),
+    rgba(24, 29, 32, 0.73)
+  );
+}
+
+.ratingButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn_submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  border: none;
+}
+#submit_btn {
+  width: 26vw;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(255, 115, 0);
+  color: white;
+  font-family: Overpass;
+  font-weight: 700;
+  border: 1px;
+}
+.btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: none;
+  font-size: 20px;
+  color: #706868;
+  background-color: rgb(39, 39, 51);
+  cursor: pointer;
+  user-select: text;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: white;
+}
+.btn:focus {
+  background-color: #b6b6b6;
+  color: white;
+}
+
+#submit_btn:hover {
+  background-color: white;
+  color: orange;
+}
+
+.star {
+  padding: 13px;
+  margin: 0;
+  background-color: #353b45;
+  border-radius: 100px;
+}
+
+#typ_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  position: relative;
+  top: -950px;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+}
+
+.rating_stars {
+  display: flex;
+  justify-content: center;
+}
+
+.rating_function {
+  background-color: #353b45;
+  border-radius: 30px;
+  width: 20vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 115, 0);
+  font-size: 15px;
+  margin-top: 15px;
+  font-family: Overpass;
+}
+
+.typ_message {
+  display: flex;
+  justify-content: center;
+}
+
+.thanks {
+  color: white;
+  margin-top: 10px;
+  font-family: Overpass;
+}
+
+.typ_message_2 {
+  display: flex;
+  justify-content: center;
+}
+
+.thanks2 {
+  margin-top: 2px;
+  color: rgba(207, 205, 205, 0.61);
+  font-family: Overpass;
+  text-align: center;
+}
