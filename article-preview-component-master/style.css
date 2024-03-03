@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Manrope;
+  src: url(Manrope-VariableFont_wght.ttf);
+}
+.head_container {
+  display: flex;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  border: 1px;
+  border-radius: 15px;
+  background-color: white;
+  width: 700px;
+  height: 250px;
+  margin: 20px;
+  padding-right: 20px;
+}
+
+body {
+  background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.first_paragraph {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: rgb(82, 82, 121);
+  font-family: manrope;
+}
+
+.second_paragraph {
+  font-size: 12px;
+  margin-left: 20px;
+  color: rgb(157, 157, 189);
+  font-family: manrope;
+}
+
+#avatar {
+  border-radius: 100px;
+  margin-left: 20px;
+}
+.name {
+  margin-left: 10px;
+  color: rgb(82, 82, 121);
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: manrope;
+  font-size: 15px;
+}
+
+.date {
+  margin-left: 10px;
+  color: rgb(157, 157, 189);
+  font-family: manrope;
+  font-size: 15px;
+}
+
+#share {
+  margin-left: 150px;
+  background-color: rgb(202, 198, 198);
+  border-radius: 100px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgb(63, 63, 105);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 148px;
+  margin-left: -80px;
+  display: flex;
+  justify-content: space-around;
+  font-family: manrope;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
